@@ -1,0 +1,601 @@
+
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>TalkAI - Hable con ChatGPT en español</title>
+	<meta name="description" content="TalkAI proporciona acceso gratuito e ilimitado a ChatGPT en español. Aquí, en nuestro sitio web, puedes utilizar el chatbot sin restricciones ni cuotas. No es necesario registrarse ni suscribirse.">
+
+	<link rel="alternate" hreflang='en' href='https://talkai.info/chat/'>
+
+	<link rel="alternate" hreflang="ru" href="https://talkai.info/ru/chat/"><link rel="alternate" hreflang="de" href="https://talkai.info/de/chat/"><link rel="alternate" hreflang="it" href="https://talkai.info/it/chat/"><link rel="alternate" hreflang="fr" href="https://talkai.info/fr/chat/"><link rel="alternate" hreflang="es" href="https://talkai.info/es/chat/"><link rel="alternate" hreflang="pt" href="https://talkai.info/pt/chat/"><link rel="alternate" hreflang="cs" href="https://talkai.info/cs/chat/"><link rel="alternate" hreflang="id" href="https://talkai.info/id/chat/"><link rel="alternate" hreflang="tr" href="https://talkai.info/tr/chat/"><link rel="alternate" hreflang="pl" href="https://talkai.info/pl/chat/"><link rel="alternate" hreflang="sv" href="https://talkai.info/sv/chat/"><link rel="alternate" hreflang="fi" href="https://talkai.info/fi/chat/"><link rel="alternate" hreflang="nl" href="https://talkai.info/nl/chat/"><link rel="alternate" hreflang="ro" href="https://talkai.info/ro/chat/"><link rel="alternate" hreflang="zh" href="https://talkai.info/zh/chat/"><link rel="alternate" hreflang="ko" href="https://talkai.info/ko/chat/"><link rel="alternate" hreflang="ja" href="https://talkai.info/ja/chat/"><link rel="alternate" hreflang="th" href="https://talkai.info/th/chat/"><link rel="alternate" hreflang="vi" href="https://talkai.info/vi/chat/"><link rel="alternate" hreflang="bg" href="https://talkai.info/bg/chat/"><link rel="alternate" hreflang="da" href="https://talkai.info/da/chat/"><link rel="alternate" hreflang="el" href="https://talkai.info/el/chat/"><link rel="alternate" hreflang="hu" href="https://talkai.info/hu/chat/"><link rel="alternate" hreflang="sk" href="https://talkai.info/sk/chat/"><link rel="alternate" hreflang="sl" href="https://talkai.info/sl/chat/"><link rel="alternate" hreflang="lv" href="https://talkai.info/lv/chat/"><link rel="alternate" hreflang="lt" href="https://talkai.info/lt/chat/"><link rel="alternate" hreflang="nb" href="https://talkai.info/nb/chat/"><link rel="alternate" hreflang="et" href="https://talkai.info/et/chat/">
+	
+
+	<link rel="stylesheet" href="../../chat.css">
+	
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64235001d0e85900127dca22&product=sticky-share-buttons' async='async'></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8093654956414228"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="navigation">
+
+		<img onclick="openMobileBar()" class='navBurger' src='../../assets/burger.svg'>
+		<img onclick="closeMobileBar()" class="navArrow" src='../../assets/arrow.svg'>
+
+	</div>
+
+	<section class="sectionSettings">
+
+		<div class='modalSettings'>
+
+			<div class='sectionSettingsTitle'>
+
+				<h2>Ajustes</h2>
+
+				<span onclick='closeSettings()'> X </span>
+
+			</div>
+
+			<div class='sectionSettingsOptions'>
+
+				<div class='sectionSettingsOptionsElement'>
+
+					<h2>Temperatura</h2>
+
+					<input type='range' class="styled-slider temperatureControl"min='0' max='2' step='0.1'>
+
+					<p>Controla la aleatoriedad: Si se reduce, las terminaciones serán menos aleatorias. A medida que la temperatura se acerque a cero, el modelo se volverá determinista y repetitivo.</p>
+
+				</div>
+
+				<div class='sectionSettingsOptionsElement'>
+
+					<h2>Creatividad</h2>
+
+					<input type='range' class="styled-slider creativityControl"min='-2' max='2' step='0.1'>
+
+					<p>Cuanto mayor sea el valor, más probable será que ChatGPT hable de temas nuevos.</p>
+
+				</div>
+
+			</div>
+
+			<div class="sectionSettingsButton">
+
+				<button class="settingsButtonConfirm"> Confirmar </button>
+
+				<button class="settingsButtonCancel" onclick='closeSettings()'> Cancelar </button>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="sectionLanguage">
+
+		<div class="modalLanguage">
+				
+			<div class='sectionLanguageContain'>
+		
+				<div class='sectionLanguageTitle'>
+
+					<h2>Seleccionar idioma</h2>
+
+					<span onclick='closeLanguage()'> X </span>
+
+				</div>
+
+				<div class='sectionLanguageButtonContain'>
+
+					<div class="sectionLanguageButtonColumn">
+
+
+									<a href="../../chat" class="sectionLanguageButton">
+
+										<img src="../../assets/flag/en.svg" loading="lazy">
+
+										<p>English</p>
+
+									</a>
+
+
+								
+
+
+										<a href="../../ru/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/ru.svg" loading="lazy">
+
+											<p>Русский</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../de/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/de.svg" loading="lazy">
+
+											<p>Deutsh</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../it/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/it.svg" loading="lazy">
+
+											<p>Italiano</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../fr/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/fr.svg" loading="lazy">
+
+											<p>Français</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+
+
+										<a href="../../es/chat/" class="sectionLanguageButton sectionLanguageButtonActive">
+
+											<img src="../../assets/flag/es.svg" loading="lazy">
+
+											<p>Español</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../pt/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/pt.svg" loading="lazy">
+
+											<p>Português</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../cs/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/cs.svg" loading="lazy">
+
+											<p>Čeština</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../id/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/id.svg" loading="lazy">
+
+											<p>Indonesia</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../tr/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/tr.svg" loading="lazy">
+
+											<p>Türkçe</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+
+
+										<a href="../../pl/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/pl.svg" loading="lazy">
+
+											<p>Polski</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../sv/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/sv.svg" loading="lazy">
+
+											<p>Svenska</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../fi/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/fi.svg" loading="lazy">
+
+											<p>Suomi</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../nl/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/nl.svg" loading="lazy">
+
+											<p>Nederlands</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../ro/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/ro.svg" loading="lazy">
+
+											<p>Română</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+
+
+										<a href="../../zh/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/zh.svg" loading="lazy">
+
+											<p>中文 (中国)</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../ko/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/ko.svg" loading="lazy">
+
+											<p>한국어</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../ja/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/ja.svg" loading="lazy">
+
+											<p>日本語</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../th/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/th.svg" loading="lazy">
+
+											<p>ไทย</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../vi/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/vi.svg" loading="lazy">
+
+											<p>Tiếng Việt</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+
+
+										<a href="../../bg/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/bg.svg" loading="lazy">
+
+											<p>български</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../da/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/da.svg" loading="lazy">
+
+											<p>Dansk</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../el/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/el.svg" loading="lazy">
+
+											<p>Ελληνικά</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../hu/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/hu.svg" loading="lazy">
+
+											<p>Magyar</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../sk/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/sk.svg" loading="lazy">
+
+											<p>Slovenčina</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+
+
+										<a href="../../sl/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/sl.svg" loading="lazy">
+
+											<p>Slovenščina</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../lv/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/lv.svg" loading="lazy">
+
+											<p>Latviešu valoda</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../lt/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/lt.svg" loading="lazy">
+
+											<p>Lietuviškai</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../nb/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/nb.svg" loading="lazy">
+
+											<p>Norsk Bokmål</p>
+
+										</a>
+
+
+									
+
+
+										<a href="../../et/chat" class="sectionLanguageButton">
+
+											<img src="../../assets/flag/et.svg" loading="lazy">
+
+											<p>Eesti</p>
+
+										</a>
+
+
+									</div><div class="sectionLanguageButtonColumn">
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</section>
+	
+	<main>
+
+		<section class="invisible">
+			
+			<span class="you">Usted</span>
+			<span class="chatgpt">ChatGPT</span>
+			<span class="chat">Chat</span>
+			<span class='try'>off</span>
+			<span class='name'>es</span>
+
+		</section>
+
+		<section class="sectionSideBar">
+			
+			<div class='sectionSideBarTop'>
+
+				<button class='newChatButton'>Nuevo Chat</button>
+
+				<!-- ЗДЕСЬ РЕКЛАМА 1 -->
+
+				<div class='sectionADS'>
+
+				</div>
+
+			</div>
+
+			<div class="sectionSideBarBottom">
+				<button><a href='/es/image/'>Generador de imágenes</a></button>
+				<button onclick="openSettings()">Ajustes</button>
+
+				<button onclick='openLanguage()'>Elegir idioma</button>
+				<button><a href='/contact-us'>Contacto</a></button>
+				<button><a href='/privacy-policy'>Política de privacidad</a></button>
+
+			</div>
+
+
+		</section>
+
+		<section class="sectionChat">
+
+			<div class='sectionChatDialogue'>
+
+				<div class="sectionChatDialogueWrapper">
+
+					<div class='messageSystem'>
+
+						<div class='messageContain'>
+
+							<h1>ChatGPT</h1>
+
+							<p>Introduzca un mensaje para iniciar un chat.</p>
+
+						</div>
+
+					</div>
+
+					<!-- ВТОРАЯ РЕКЛАМА ЗДЕСЬ -->
+					<div class='sectionADS2'>
+
+					</div>
+
+					<div class='messageWait'>
+
+						<div class='messageContain'>
+
+							<h1>ChatGPT</h1>
+
+							<p>Por favor, espere...</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+<!-- Talk AI - Send -->
+<center><ins class="adsbygoogle"
+     style="display:block;min-width:400px;max-width:970px;width:100%"
+     data-ad-client="ca-pub-8093654956414228"
+     data-ad-slot="4600348071"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins></center>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+			<div class='sectionChatForm'>
+
+				<textarea placeholder="Enter your question" class="sectionChatFormInput"> </textarea>
+
+				<button class="sectionChatFormButton">Enviar</button>
+
+				<p style='display: none;'>You have <span class='activeTry'>9</span> out of 10 requests left.</p>
+			</div>
+
+		</section>
+
+	</main>
+
+</body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92988225, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92988225" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FB7V9WMN30"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FB7V9WMN30');
+</script>
+</html>
+
+<script type="text/javascript" src="../../chat.js"></script>
